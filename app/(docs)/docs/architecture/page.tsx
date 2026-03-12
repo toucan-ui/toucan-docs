@@ -158,13 +158,11 @@ export default function ArchitecturePage() {
   tokens/        → Style Dictionary config + JSON tokens + atom CSS
   core/          → React primitives (structure + accessibility)
   interactions/  → Motion thread (V2)
-  patterns/      → ${STAT_PATTERN_COUNT} theme-agnostic layout patterns
-apps/
-  docs/          → Next.js documentation site`}
+  patterns/      → ${STAT_PATTERN_COUNT} theme-agnostic layout patterns`}
             language="text"
           />
           <Text>
-            Build order: tokens → core → patterns → docs. Turborepo manages the dependency graph.
+            Build order: tokens → core → patterns. Turborepo manages the dependency graph. The documentation site and theme configurator live in separate repositories and consume the published npm packages.
           </Text>
         </Grid>
       </Grid>
